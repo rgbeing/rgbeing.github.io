@@ -1,28 +1,61 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-    <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-      {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-      {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% endif %}
 
-      {% if post.sitemap.priority == null %}
-          <priority>0.5</priority>
-      {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% endif %}
+<url>
+  <loc>https://rgbeing.github.io/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://rgbeing.github.io/aboutme/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rgbeing.github.io/2024-07-21-correlation-based-clustering/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rgbeing.github.io/2020-08-22-ppmap-by-rank/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rgbeing.github.io/2020-08-04-playcount-research-1/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rgbeing.github.io/2017-03-10-welcome-to-jekyll/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rgbeing.github.io/2017-03-07-the-case-of-the-missing-post/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rgbeing.github.io/page2/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rgbeing.github.io/2017-03-06-the-mystery-of-the-filler-post/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rgbeing.github.io/2017-03-05-pagination-post/</loc>
+  <lastmod>2024-07-22T05:30:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-    </url>
-  {% endfor %}
+
 </urlset>
