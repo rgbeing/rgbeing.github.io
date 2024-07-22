@@ -3,6 +3,7 @@ layout: post
 title: "Getting the playcount model of osu"
 author: "Repo at osu"
 comments: true
+mathjax: true
 ---
 
 **NOTE**: As I have only beginner-level knowledge in statistics, much of the reasoning might not substantiated properly 
@@ -33,7 +34,7 @@ I _normalized_ the maps' playcount by dividing all playcount records by the play
 As a result, I got the following graph.
 
 ![Normalized graph](\assets\images\playcount-research\normalized.png)
-_time~normalized playcount graph_
+time~normalized playcount graph
 
 The vertical dotted line is $x=7.0$, and the horizontal dotted line is $y=1.0$. As playcounts are normalized, All lines on the graph should pass through the intersection of dotted lines.
 
