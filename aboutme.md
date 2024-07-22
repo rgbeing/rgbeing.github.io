@@ -1,7 +1,9 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: osu! and statistics enthusiast
 ---
 
-Will be added soon!
+Hello, I am Dojun Hwang from the Republic of Korea.
+I am curretly undergraduate in computer science at Korea University, Seoul. I also double-major in statistics.
+I love how world and people are explained in statistical and mathematical manner.
