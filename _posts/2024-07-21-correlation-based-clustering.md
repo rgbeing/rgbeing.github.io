@@ -11,6 +11,23 @@ This article is going to show that **correlation** between objects can be used i
 This article is also going to show that this method has its theorecial background -- correlation between two objects is equal to the Euclidean distance between row-wise standardized data.
 By this theoretical background, we can expect that this method will be effective especially in time-series data.
 
+# Motivation
+
+I once took "Multiraviate Data Analysis" class in my university.
+One of the big topics in the class was *exploratory factor analysis (EFA)*.
+Basically, it is a statistical framework which tries to find (unobserved) factors from the observed correlation matrix.
+For example, psychologists have been tried to find the factors which decides a person's characteristics.
+So they made a survey which asked about peoples' characteristics, and using the correlation between the answers of the survey, they could be able to divide person's characteristics into several factors.
+Learning this EFA framework, I thought of some different thing -- if we can find (unobserved) factors from a correlation matrix, why we cannot find so-called clusters from the correlation matrix?
+But my professor told me that, you should not use the EFA framework in that way, as the purpose of EFA is not clustering.
+
+Interestingly, the next topic I learnt in that class was *clster analysis*.
+And surprisingly, in the textbook, there was a question which asks to perform agglomerative hierarchical clustering, using the correlation as a similarity measure.
+In that point, I wondered -- is it really *make sense to use correlation as a similarity measure*?
+So I tried to find the reason that it works, but there was few materials related to this. So I tried to find the reason by myself.
+
+(Actually there was some other papers which deals with this, but I found after self-studying it.)
+
 # Illustrative Example
 
 Suppose you have the following time series data.
